@@ -132,10 +132,10 @@ static const char *colorname[] = {
 	"gray50",
 	"#cc6666",
 	"#b5bd68",
-	"yellow",
+	"#f0c674",
 	"#669eff",
   "#a093d2",
-	"cyan",
+	"#02b6ca",
 	"white",
 
 	[255] = 0,
