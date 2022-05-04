@@ -7,8 +7,8 @@
  */
 
 //static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
-static char *font = "mono:size=10:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font = "Source Code Pro:size=11:antialias=true:autohint=true";
+static char *font2[] = { "Source Code Pro:pixelsize=11:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
