@@ -125,7 +125,7 @@ static const char *colorname[] = {
 	"yellow3",
 	"#0099ff",
 	"magenta3",
-	"#1d1f21",
+	"#8abeb7",
 	"gray90",
 
 	/* 8 bright colors */
@@ -151,10 +151,10 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 15;
-unsigned int defaultbg = 6;
+unsigned int defaultbg = 0;
 static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
-static unsigned int background = 6;
+static unsigned int background = 0;
 /*
  * Default shape of cursor
  * 2: Block ("█")
