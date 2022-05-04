@@ -116,33 +116,33 @@ unsigned int tabspaces = 4;
 float alpha = 0.95;
 float alphaOffset = 0.0;
 float alphaUnfocus;
-/* Terminal colors (16 first used in escape sequence) */
+
 static const char *colorname[] = {
-  /* 8 normal colors */
-  "#3b4252", /* black   */
-  "#bf616a", /* red     */
-  "#a3be8c", /* green   */
-  "#ebcb8b", /* yellow  */
-  "#81a1c1", /* blue    */
-  "#b48ead", /* magenta */
-  "#88c0d0", /* cyan    */
-  "#e5e9f0", /* white   */
+	/* 8 normal colors */
+	"black",
+	"red3",
+	"green3",
+	"yellow3",
+	"blue2",
+	"magenta3",
+	"#1d1f21",
+	"gray90",
 
-  /* 8 bright colors */
-  "#4c566a", /* black   */
-  "#bf616a", /* red     */
-  "#a3be8c", /* green   */
-  "#ebcb8b", /* yellow  */
-  "#81a1c1", /* blue    */
-  "#b48ead", /* magenta */
-  "#8fbcbb", /* cyan    */
-  "#eceff4", /* white   */
+	/* 8 bright colors */
+	"gray50",
+	"red",
+	"green",
+	"yellow",
+	"#5c5cff",
+	"magenta",
+	"cyan",
+	"white",
 
-  [255] = 0,
+	[255] = 0,
 
-  /* more colors can be added after 255 to use with DefaultXX */
-  "#2e3440", /* background */
-  "#d8dee9", /* foreground */
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#cccccc",
+	"#555555",
 };
 
 
@@ -150,12 +150,11 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-unsigned int background = 256;
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 256;
-
+unsigned int defaultfg = 15;
+unsigned int defaultbg = 6;
+static unsigned int defaultcs = 256;
+static unsigned int defaultrcs = 257;
+static unsigned int background = 6;
 /*
  * Default shape of cursor
  * 2: Block ("█")
@@ -275,7 +274,6 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ CTRLMOD,              XK_N,           newterm,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ MODKEY,               XK_Page_Up,     kscrollup,      {.i = -1} },
